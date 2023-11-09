@@ -1,0 +1,15 @@
+######################################################################
+
+    I am developing an innovative chatbot powered by a dynamic combination of Langchain and OpenAI technologies. This chatbot is designed to provide users with intelligent and interactive conversations, enhancing their online experiences. By leveraging Langchain's natural language processing capabilities and OpenAI's state-of-the-art language models, our chatbot can understand and respond to user queries, making it an invaluable tool for businesses, customer support, and engaging online interactions. With a focus on delivering seamless and human-like communication, our chatbot aims to elevate user engagement, streamline customer interactions, and provide an exceptional conversational experience
+
+######################################################################
+
+1. What libaries am I going to use for this project ?
+    Flask
+    Langchain
+
+2. What kind of functionalities does this chatbot needs to have
+    Humanmessage / AImessage / Welcomemessage
+    
+3. What kind of connections does this application have ?
+    First implement some functionalities from langchain

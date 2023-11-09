@@ -1,0 +1,151 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the chat container */
+.chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #666; /* Grey background color */
+    border: 2px solid #ffcc00; /* Neon yellow border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Verdana, sans-serif; /* Set font to Verdana */
+    height: 600px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflow content if it exceeds the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style the chat header */
+.chat-header {
+    text-align: center;
+    color: #ffcc00; /* Neon yellow text color */
+    font-size: 11px;
+}
+
+/* Style chat messages container */
+.chat-messages {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #ffffff8f; /* White background for messages */
+    font-size: x-small;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add space between chat messages and input */
+}
+
+/* Style messages sent by the user */
+.message.sent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style the icon in sent messages */
+.message.sent .icon {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Style sender text in sent messages */
+.message.sent .message-sender {
+    font-weight: bold;
+}
+
+/* Style message text in sent messages */
+.message.sent .message-text {
+    margin: 0;
+}
+
+/* Style messages received */
+.message.received {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style message text in received messages */
+.message.received .message-text {
+    margin: 0;
+}
+
+/* Style the send button */
+#send-button {
+    background-color: #ffcc00;
+    color: #fff;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* Style the chat input container */
+.chat-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the input container */
+.input-container {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Adjust the value to control the roundness */
+    padding: 10px;
+}
+
+/* Style the input field */
+.input-container input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-size: small;
+}
+
+/* Style the placeholder text */
+.chat-input input[type="text"]::placeholder {
+    font-size: x-small; /* Adjust the font size of the placeholder text */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style the send button */
+.input-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}

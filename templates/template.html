@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Application</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/template.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Virtual Assistant Dean</h1>
+        </div>
+        <div class="chat-messages">
+            <div class="message sent">
+                <span class="icon" style="background-image: url('/static/ai-icon.png');"></span>
+                <div class="message-text">Hello there! How can I help you?</div>
+            </div>
+            <div class="message received" id="received-message" style="display: none;">
+                <div class="message-text"></div>
+            </div>
+            <!-- More messages can be added here -->
+        </div>
+        <div class="chat-input">
+            <div class="input-container">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-button">
+                    <img src="/static/send-icon.png" alt="Send">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+    <script>
+        document.getElementById("send-button").addEventListener("click", function() {
+            var input = document.getElementById("message-input").value;
+            if (input.trim() !== "") {
+                // Display the "message received" section when the input is filled in
+                document.getElementById("received-message").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
